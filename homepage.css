@@ -1,0 +1,211 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+.grid-container{
+display: inline-grid;
+  grid-template-columns:180px 180px 720px 360px ;
+grid-template-rows:[Navigation]30px [welcome]500px [pi]400px [spiral]600px 200px ;
+padding: 1.5px;
+background-color:black;
+grid-gap: 5px;
+}
+
+.grid-item1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-size: 12px;
+  background-color:white;
+  text-align: left;
+  padding: 10px;
+  color: black;
+ 
+}
+.grid-item2{
+  grid-column-start: 2;
+  grid-column-end: 5;
+  font-size: 12px;
+  background-color:white;
+  text-align: left;
+  padding: 10px;
+  color:black;
+  
+}
+
+.nav{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+ 
+}
+li{
+  float: left;
+  
+}
+
+li a{
+  display:inline;
+  padding: 15px;
+  text-align:center;
+  text-decoration: none;
+ color:inherit;
+}
+
+
+.grid-item3{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  font-size: 4px;
+  background-color: black;
+  text-align: center;
+  padding-top: .1px;
+   
+}
+ .grid-item3 .screen img{
+  margin-left:-100px;
+  width:200%;
+  height:500px;
+}
+
+.grid-item35{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  font-size: 4px;
+  background-color: black;
+  text-align: center;
+  padding-top: .1px;
+   
+}
+#slider{
+   overflow:hidden;
+}
+
+#slider figure{
+  position: relative;
+  width:500%;
+  margin: 0;
+  left:0;
+  animation:20s slider infinite;
+  animation:20s slider5 infinite;
+}
+
+#slider figure img {
+  width:20%;
+  float:left;
+}
+
+@keyframes slider{
+  0%{
+    left: 0;
+  }
+  20%{
+    left:0;
+  }
+  22%{
+    left: -100%;
+  }
+  42%{
+    left:-100%;
+  }
+  44%{
+    left:-200%;
+  }
+  64%{
+      left:-200%;
+    }
+    66%{
+      left: -300%;
+    }
+    86%{
+      left: -300%;
+    }
+  }
+    
+  @keyframes slider5{
+    0%{
+      left: 0;
+    }
+    20%{
+      left:0;
+    }
+    22%{
+      left: -100%;
+    }
+    42%{
+      left:-100%;
+    }
+    44%{
+      left:-200%;
+    }
+    64%{
+        left:-200%;
+      }
+      66%{
+        left: -300%;
+      }
+      86%{
+        left: -300%;
+      }
+      88%{
+        left:-400%;
+      }
+      100%{
+        left: -400%;
+      }
+  
+    }
+
+
+
+.grid-item4{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  
+  font-size: 15px;
+  background-color:white;
+  text-align: left;
+  padding: 20px;
+  color: black;
+  overflow: auto;
+}
+
+
+.slogan{
+  text-align: center;
+  
+  font-size: 30px;
+}
+
+
+.grid-item5{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  font-size: 4px;
+  background-color: black;
+  color:white;
+  text-align: center;
+  padding: 10px;
+  overflow:hidden;
+
+}
+
+.youtube{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  float:left;
+}
+
+iframe{
+  display: inline;
+ text-align: center;
+ padding:10px;
+}
+
+
+.grid-item5 img{
+  height:600px;
+}

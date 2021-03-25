@@ -31,7 +31,66 @@
     <source src="video/Romantic (1).webm" type="video/mp4" >
     </video>
     </div>
-  <div class="grid-item4">Me</div>
+  <div class="grid-item4"><a>
+    let angle = 0;<br><br>
+
+let cx= 800;<br>
+let cy = 400;<br><br>
+
+
+
+
+
+function setup() {<br>
+  createCanvas(cx, cy);<br><br>
+ 
+}
+ 
+
+
+
+function draw() {<br>
+ if (frameCount === 1){<br>
+   capturer.start();<br>
+ }<br><br>
+  background(5, 0 ,10);<br>
+  translate(width/2,height/2);<br>
+  
+  push();<br>
+  rotate(angle * 3.14);<br>
+  stroke(128,0,128);<br>
+  strokeWeight(1.2);<br>
+  line(0,0,cx/10,cy/10);<br>
+  line(0,0,-cx/10,-cy/10);<br>
+  pop();<br><br>
+  push();<br>
+  rotate(angle/2);<br>
+  strokeWeight(1.26);<br>
+  stroke(258,168,0);<br>
+  line(0,0,cx/10,cy/10);<br>
+
+  pop();<br><br>
+
+rotate(angle * 3.14);<br>
+stroke(100,0,100)<br>
+fill(128,0,0);<br>
+  circle(cx/4, cy/4, (cx/2 + cy/2)/3.14);<br>
+  fill(0,0,128);<br>
+  circle(-cx/4, -cy/4, (cx/2 + cy/2)/3.14);<br>
+  angle = angle + .05;<br><br>
+
+  if(frameCount <1000){<br>
+    capturer.capture(canvas)<br>
+  }else if(frameCount === 1000){<br>
+    capturer.stop();<br>
+    capturer.save();<br><br>
+      
+    
+  }<br>
+}<br>
+
+
+  </a></div>
 </div>
 </body>
 

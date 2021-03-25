@@ -33,7 +33,151 @@
     <source src="video/Soul.webm" type="video/mp4" >
     </video>
     </div>
-  <div class="grid-item4">Me</div>
+  <div class="grid-item4">
+    <a>
+    let angle = 0;<br>
+var x = 200;<br>
+var y = 200;<br><br><br>
+
+
+
+function setup() {<br>
+  createCanvas(1200, 400);<br>
+  angleMode(DEGREES);<br>
+
+}<br><br>
+
+
+
+function draw() {<br>
+  if(frameCount == 1) {<br>
+    capturer.start();<br>
+  }<br>
+  background(220);<br><br>
+
+  //w1 <br>
+
+push();<br>
+translate(x, y);<br>
+circle()<br>
+strokeWeight(4);<br>
+fill(237,41,57);<br>
+rect(-199,-200,400,400);<br><br>
+
+
+//w1 white circle<br>
+noFill();<br>
+strokeWeight(2);<br>
+rotate(angle);<br>
+stroke(250,250,250);<br>
+circle(0,0,100);<br><br>
+
+
+//w1 black outline<br>
+noFill();<br>
+stroke(0,0,0);<br>
+circle(0,0,105);<br>
+circle(0,0,95);<br><br>
+
+//w1 in curves<br>
+stroke(0,0,0);<br>
+rotate(angle);<br>
+curve(0, 250, -40, -10, 40, -10, 0, 250);<br><br>
+
+curve(0, -250, -40, 10, 40, 10, 0, -250);<br><br>
+
+//w1 arms<br>
+stroke(0,0,0);<br>
+fill(255,255,255);<br>
+curve(-400,0,50.5,10,50.5,-10,-400,0);<br><br>
+
+curve(400,0,-50.5,10,-50.5,-10,400,0);<br>
+angle = angle + .5;<br>
+pop();<br><br>
+
+//b2<br>
+push();<br>
+translate(x * 3, y);<br>
+strokeWeight(4);<br>
+fill(213,159,0);<br>
+rect(-199,-200,799,400);<br><br>
+
+
+// b2 white circle<br>
+noFill();<br>
+strokeWeight(2);<br>
+rotate(angle);<br>
+stroke(96,4,00);<br>
+circle(0,0,100);<br><br>
+
+
+//b2 black outline<br>
+noFill();<br>
+stroke(0,0,0);<br>
+circle(0,0,105);<br>
+circle(0,0,95);<br><br>
+
+//b2 in curves<br>
+stroke(0,0,0);<br>
+rotate(angle);<br>
+curve(0, 250, -40, -10, 40, -10, 0, 250);<br><br>
+
+curve(0, -250, -40, 10, 40, 10, 0, -250);<br><br>
+
+//b2 arms<br>
+stroke(0,0,0);<br>
+fill(96,4,00);<br>
+curve(-400,0,50.5,10,50.5,-10,-400,0);<br><br>
+
+curve(400,0,-50.5,10,-50.5,-10,400,0);<br><br>
+pop();<br><br>
+
+//b3<br>
+push();<br>
+translate(x * 5, y);<br><br>
+
+noFill();<br>
+strokeWeight(2);<br><br>
+
+//b3 white circle<br>
+rotate(angle);<br>
+stroke(60,5,00);<br>
+circle(0,0,100);<br><br>
+
+
+//b3 black outline<br>
+noFill();<br>
+stroke(0,0,0);<br>
+circle(0,0,105);<br>
+circle(0,0,95);<br><br>
+
+//b3 in curves<br>
+stroke(0,0,0);<br>
+rotate(angle);<br>
+curve(0, 250, -40, -10, 40, -10, 0, 250);<br><br>
+
+curve(0, -250, -40, 10, 40, 10, 0, -250);<br><br>
+
+//b3 arms<br>
+stroke(0,0,0);<br>
+fill(40,5,0);<br>
+curve(-400,0,50.5,10,50.5,-10,-400,0);<br><br>
+
+curve(400,0,-50.5,10,-50.5,-10,400,0);<br><br>
+
+pop();<br><br>
+
+if(frameCount < 1000){<br>
+  capturer.capture(canvas)<br>
+} else if (frameCount == 1000){<br><br>
+
+  capturer.save()<br>
+  capturer.stop()<br>
+}<br>
+
+}<br>
+</a>
+  </div>
 </div>
 </body>
 

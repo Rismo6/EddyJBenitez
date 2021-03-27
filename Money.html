@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel= "stylesheet" href= "homepage.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EddyJ.Benitez</title>
+</head>
+<body>
+  <div class="grid-container">
+  <div class="grid-item1">Eddy Benitez</div>
+  <div class="grid-item2">
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Medicine.html">Medicine</a></li>
+      <li><a href ="Spiral.html">Spiral</a></li>
+      
+      <li><a href="Romantic.html">Romantic</a></li>
+      <li><a href="Money.html">Money</a></li>
+      <li><a href="Soul.html">Soul</a></li>
+      <li><a href ="Proposal.html">Proposal</a></li>
+      <li><a href ="Digital World.html">Digital Worlds</a></li>
+      <li><a href ="Mourning Mac.html">Mourning Mac Miller</a></li>
+      <li><a href ="Mythical grounds.html">Mythical Realm</a></li>
+      <li><a href ="OntheBrain.html">On The Brain Podcast</a></li>
+
+
+    </ul>
+  </div>
+  <div class="grid-item3" style="grid-column-start:1;" >
+    <video width="1215"
+    height="500" autoplay loop>
+    <source src="video/Command (3).webm" type="video/mp4" >
+    </video>
+    </div>
+  <div class="grid-item4">
+    <a>
+let words= ["Succeed", "Persevere", "Strong-willed"];<br>
+let word= "Money.";<br><br>
+
+function setup() {<br>
+  createCanvas(1200, 400);<br><br>
+}<br><br>
+
+function draw() {<br>
+  if (frameCount === 1){<br>
+    capturer.start();<br><br>
+  }<br><br>
+
+  background(0,170,170);<br><br>
+  
+  //Shaking text. My y For loop [words] <br>
+  for(j=25; j<=400; j+=25){<br>
+    let r= random(40,50);<br><br>
+  //List "Succeed", "Persevere", "Strong-willed"<br>
+  textSize(20);<br>
+  fill(0,0,0);<br>
+  text(words,r,j);<br><br>
+
+  //black bar<br>
+  fill(0,0,0);<br>
+  rect(0,310,400,30);<br><br>
+
+  //lifted text [words]<br>
+  fill(150,0,0);<br>
+  textSize(23);<br>
+  text(words,r,330);<br><br>
+  
+  //fixed text. My y for loop 'Money'<br>
+  for(m=25; m<=340; m+=45){<br><br>
+    //dropping text 'Money'<br>
+    textSize(250);<br>
+    fill(150,0,0);<br>
+     text(word, 410,m);<br><br>
+
+     //overlap the for loop<br>
+     fill(0,170,170);<br>
+     noStroke();<br>
+     rect(400,220,800,150);<br><br>
+
+     //fixed text<br>
+     fill(0,0,0);<br>
+     text(word, 410,340);<br><br>
+
+  }<br>
+  }<br><br>
+  if(frameCount <1000){<br>
+    capturer.capture(canvas)<br>
+  }else if(frameCount === 1000){<br>
+    capturer.stop();<br>
+    capturer.save();<br><br>
+      
+    
+  }<br>
+}<br><br>
+
+      
+</a>
+  </div>
+</div>
+</body>
+
+</html>

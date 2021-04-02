@@ -10,25 +10,26 @@ grid-template-rows:[Navigation]30px [welcome]500px [pi]400px [spiral]600px 200px
 padding: 1.5px;
 background-color:black;
 grid-gap: 5px;
+text-align:justify;
 }
 
 .grid-item1{
   grid-column-start: 1;
   grid-column-end: 2;
-  font-size: 12px;
+  font-size: 1em;
   background-color:white;
   text-align: left;
-  padding: 10px;
+  padding: .5em;
   color: black;
  
 }
 .grid-item2{
   grid-column-start: 2;
   grid-column-end: 5;
-  font-size: 12px;
+  font-size: 1em;
   background-color:white;
   text-align: left;
-  padding: 10px;
+  padding: .5em;
   color:black;
   
 }
@@ -47,7 +48,7 @@ li{
 
 li a{
   display:inline;
-  padding: 15px;
+  padding: 1em;
   text-align:center;
   text-decoration: none;
  color:inherit;
@@ -57,25 +58,25 @@ li a{
 .grid-item3{
   grid-column-start: 3;
   grid-column-end: 4;
-  font-size: 4px;
+  font-size: 1em;
   background-color: black;
   text-align: center;
-  padding-top: .1px;
+  padding-top: .5em;
    
 }
  .grid-item3 .screen img{
-  margin-left:-100px;
+  margin-left:-1em;
   width:200%;
-  height:500px;
+  height:30em;
 }
 
 .grid-item35{
   grid-column-start: 3;
   grid-column-end: 4;
-  font-size: 4px;
+  font-size: 1em;
   background-color: black;
   text-align: center;
-  padding-top: .1px;
+  padding-top: .5em;
    
 }
 #slider{
@@ -94,6 +95,7 @@ li a{
 #slider figure img {
   width:20%;
   float:left;
+  height:30em;
 }
 
 @keyframes slider{
@@ -163,10 +165,10 @@ li a{
   grid-column-start: 1;
   grid-column-end: 5;
   
-  font-size: 15px;
+  font-size: 1em;
   background-color:white;
   text-align: left;
-  padding: 20px;
+  padding: 1em;
   color: black;
   overflow: auto;
 }
@@ -175,18 +177,18 @@ li a{
 .slogan{
   text-align: center;
   
-  font-size: 30px;
+  font-size: 1.5em;
 }
 
 
 .grid-item5{
   grid-column-start: 1;
   grid-column-end: 5;
-  font-size: 4px;
+  font-size: 1em;
   background-color: black;
   color:white;
   text-align: center;
-  padding: 10px;
+  padding: .5em;
   overflow:hidden;
 
 }
@@ -202,10 +204,11 @@ li a{
 iframe{
   display: inline;
  text-align: center;
- padding:10px;
+ padding:.5em;
+ float:left;
 }
 
 
 .grid-item5 img{
-  height:600px;
+  height:30em;
 }
